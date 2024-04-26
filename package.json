@@ -5,7 +5,7 @@
   "main": "./src/index.ts",
   "scripts": {
     "dev": "concurrently \"nodemon\" \"npm run stripe\"",
-    "stripe": "stripe listen --forward-to localhost:7000/api/order/checkout/webhook",
+    "stripe": "stripe listen --forward-to https://food-ordering-app-backend-n2m7.onrender.com/api/order/checkout/webhook",
     "build": "npm install && npx tsc",
     "start": "node dist/index.js"
   },
